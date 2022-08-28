@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Comments</title>
+    <style>
+        #showDetailsDiv{
+            text-align: center;
+        }
+        #commentsList, #newCommentsList{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        list-style: none;
+    }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="showDetailsDiv">
+        </div>
+
+        <div id="commentsShow">
+            
+            <ul id="commentsList">             
+            </ul>
+
+            <ul id="newCommentsList">             
+            </ul>
+       
+        </div>
+
+    <button onclick="loadComment()">Show More Comments</button>
+    </section>
+
+
+    <script src="comments.js"></script>
+</body>
+</html>
