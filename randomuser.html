@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <style>
+        h1{
+            text-align: center;
+            color:darkslateblue
+        }
+        button{
+            background-color: darkorchid;
+            color: white;
+            padding: 15px;
+            border: 0;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: large;
+        }
+        button:hover{
+            background-color: mediumslateblue;
+        }
+        div{
+            margin:15px;
+        }
+        #showImage{
+            text-align: center;
+        }
+
+        #showImage, #showDetailsDiv{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Welcome to Loading Random User API!
+        </h1>
+    </header>
+
+    <section>
+
+        <button onclick="showUser()">Show User Randomly</button>
+
+        <div id="showImage">
+        </div>
+
+        <div id="showDetailsDiv">
+        </div>
+
+    </section>
+    
+    <script src="randomuser.js"></script>
+</body>
+</html>

@@ -69,7 +69,8 @@ const showDetail = (id) => {
     const showDetailDiv = document.getElementById('showDetailsDiv');
     
     showDetailDiv.innerHTML = `
-    <h2>ID is : ${data[0].id}</h2>
+    <h2>Show User Details</h2>
+    <h3>ID is : ${data[0].id}</h2>
     <h4>Name is : ${data[0].name}</h4>
     <p>Email is : ${data[0].email}</p>
 `
