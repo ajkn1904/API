@@ -18,7 +18,7 @@ data.slice(0, 16).forEach(element => {
         <img src="${element.url}" class="card-img-top">
         <div class="card-body">
         <h5 class="card-title">${element.title}</h5>
-        <button class="btn btn-primary" onclick='shoewPhotoDetails(${JSON.stringify (element)})'>Show Details</button>
+        <button class="btn btn-success" onclick='shoewPhotoDetails(${JSON.stringify (element.id)})'>Show Details</button>
         </div>
     `
     showPhoto.appendChild(div);
@@ -28,7 +28,9 @@ data.slice(0, 16).forEach(element => {
 
 
 
-const shoewPhotoDetails = (data) => {
+const shoewPhotoDetails = async id => {
+    const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${id}`)
+    const data = await res.json()
     console.log(data);
 
     const detailDiv = document.getElementById('detailsDiv');
