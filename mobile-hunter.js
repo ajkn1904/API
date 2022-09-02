@@ -6,7 +6,6 @@ const loadPhone = (value, dataLimit) =>{
 
 
 const showMobile = (data, dataLimit) => {
-    //console.log(data.data);
     
     const showMobileDiv = document.getElementById('show-phone');
     showMobileDiv.innerHTML = '';
@@ -63,7 +62,6 @@ const showDetails = (data) => {
     .then(res => res.json())
     .then(data => {
         loadModalData(data.data);
-        //console.log(data.data)
     });
 }
 
@@ -86,10 +84,10 @@ const loadModalData = (data) =>{
 
 const processData = (dataLimit) =>{
     const textField = document.getElementById('searchPhone');
+    showloader.classList.remove('d-none');
     const textFieldvalue = textField.value;
     loadPhone(textFieldvalue, dataLimit);
-    textField.value = '';
-    showloader.classList.remove('d-none');
+   // textField.value = '';
 }
 
 
@@ -114,4 +112,4 @@ const btnShowAll = document.getElementById('showAllBtn').addEventListener('click
 });
 
 
-loadPhone('apple', 10)
+loadPhone('apple')
