@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <title>Mobile DB</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-center text-success my-5">Let's Hunt Tour Mobile!</h1>
+    </header>
+
+    <section class="container">
+        <div class="mb-5 text-end">
+            <input type="text" id="searchPhone" placeholder="Hunt Your Phone">
+            <button id="searchPhoneBtn" class="btn btn-success">SEARCH</button>
+        </div>
+
+
+        <div class="text-center">
+            <div id="loader" class="spinner-border text-success d-none" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+
+        <div>
+            <h4 id="notFoundMsg" class="text-warning text-center d-none">No Item Found</h4>
+        </div>
+
+
+        <div  id="show-phone" class="row row-cols-1 row-sm-cols-2 row-cols-md-3 row-cols-lg-3 g-4">
+        </div>
+
+
+        <div>
+        
+            <div class="modal fade" id="mobileDetailsModal" tabindex="-1" aria-labelledby="mobileDetailsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="mobileDetailsModalLabel"></h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modal-body" class="modal-body">
+                       
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+  
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="mobile-hunter.js"></script>
+</body>
+</html>
