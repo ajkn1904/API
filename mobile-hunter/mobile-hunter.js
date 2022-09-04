@@ -66,6 +66,7 @@ const showDetails = (data) => {
 }
 
 const loadModalData = (data) =>{
+    console.log(data)
     const modalData = document.getElementById('mobileDetailsModalLabel');
     modalData.innerText = data.name;
 
@@ -77,6 +78,12 @@ const loadModalData = (data) =>{
         <p>Chipset: ${data.mainFeatures?.chipSet ? data.mainFeatures.chipSet : "Not Found"}</p>
         <p>Display: ${data.mainFeatures?.displaySize ? data.mainFeatures.displaySize : "Not Found"}</p>
         <p>Memory: ${data.mainFeatures?.memory ? data.mainFeatures.memory : "Not Found"}</p>
+        <h5>Other Features</h5>
+        <p>Bluetooth: ${data.others?.Bluetooth ? data.others.Bluetooth : "No"}</p>
+        <p>GPS: ${data.others?.GPS ? data.others.GPS : "No"}</p>
+        <p>NFC: ${data.others?.NFC ? data.others.NFC : "No"}</p>
+        <p>USB: ${data.others?.USB ? data.others.USB : "No"}</p>
+        <p>WLAN: ${data.others?.WALN ? data.others.WALN : "No"}</p>
         
         <p>Sensors: ${data.mainFeatures?.sensors[0] ? data.mainFeatures.sensors[0]: ''}${data.mainFeatures.sensors[1] ? ', '+data.mainFeatures.sensors[1] : ''}${data.mainFeatures?.sensors[2] ? ', '+data.mainFeatures.sensors[2] : ''}${data.mainFeatures?.sensors[3] ? ', '+data.mainFeatures.sensors[3] : ''}${data.mainFeatures?.sensors[4] ? ', '+data.mainFeatures.sensors[4] : ''}${data.mainFeatures?.sensors[5] ? ', '+data.mainFeatures.sensors[5] : ''}${data.mainFeatures?.sensors[6] ? ', '+data.mainFeatures.sensors[6] : ''}</p>
     `
