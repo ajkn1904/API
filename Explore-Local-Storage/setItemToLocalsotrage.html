@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore LocalStorage</title>
+
+    <style>
+        body{
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Please Contact</h1>
+    </header>
+
+    <section style="display:flex; gap:10px;">
+        <p id="increase-paragraph"></p>
+        <div>
+            <button id="btn-increase">Count</button>
+        </div>
+    </section>
+    <br>
+
+    <section>
+        <p id="show-name-paragraph"></p>
+        <p id="show-email-paragraph"></p>
+        <p id="show-message-paragraph"></p>
+    </section>
+    <br>
+    <br>
+    
+    <section>
+        <input type="text" id="name-field" placeholder="Name">
+        <button id="btn-add-name">Add Name</button>
+        <button id="btn-delet-name">Delete Name</button>
+    </section>
+    <br>
+    <br>
+    <section>
+        <input type="text" id="email-field" placeholder="Email">
+        <button id="btn-add-email">Add Email</button>
+        <button id="btn-delet-email">Delete Email</button>
+    </section>
+    <br>
+    <br>
+    <section>
+        <input type="text" id="message-field" placeholder="Message">
+        <button id="btn-add-message">Add Message</button>
+        <button id="btn-delet-message">Delete Message</button>
+    </section>
+    <br>
+    <br>
+
+    <section>
+        <button id="btn-send">Send All</button>
+        <button id="btn-reset">Reset</button>
+    </section>
+
+    <script src="setItemToLocalsotrage.js"></script>
+</body>
+</html>

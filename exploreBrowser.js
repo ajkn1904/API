@@ -4,7 +4,7 @@ console.log('first');
 console.log('second');
 setTimeout(() => {
     console.log('third');
-}, 3000);
+}, 3500);
 console.log('fourth');
 console.log('fifth');
 
@@ -40,3 +40,32 @@ if(confirmation){
 
 console.log('');
 console.log('');
+
+
+//Task 4
+//Clear the localstorage of any website
+localStorage.clear()
+
+//Task 5:
+//Set a localstorage item. key:name, value:khan
+localStorage.setItem('name', 'khan')
+
+//Task 6:
+//Set a localstorage item. key:age, value:10
+localStorage.setItem('age', 10)
+
+//Task 7:
+//Get the items you have set
+localStorage.getItem('name');
+localStorage.getItem('age'); 
+
+//Task 8:
+//Remove the local storage key 'name' & key 'age'
+localStorage.removeItem('name')
+localStorage.removeItem('age') 
+
+//Task 9:
+//Set object as loacal storage item. The object is {firstName: 'Abraham', lastName: 'Linkon'}
+
+const setobj = {firstName: 'Abraham', lastName: 'Linkon'}
+localStorage.setItem('setobj', JSON.stringify(setobj)); 
